@@ -1,12 +1,11 @@
 @import "mixins";
 @import "fonts";
 @import "vendor";
-// @import "var";
-// @import "settings";
-
-@media (min-width: 1200px) {
-  /* стили указанные здесь применяются, если ширина viewport больше или равно 1200px */
-}
+@import "vars";
+@import "settings";
+@import "header";
+@import "content";
+@import "footer";
 
 body {
   background-color: green;
