@@ -3,11 +3,35 @@
 @import "vendor";
 @import "vars";
 @import "settings";
+@import "ui";
 @import "header";
 @import "content";
 @import "footer";
 
 body {
-  background-color: green;
+  background-color: var(--bg-color);
+  font-family: "NotoSansRegular", sans-serif;
+  font-size: 10px;
+  line-height: 11.82px;
+  @include media(1140) {
+    font-size: 18px;
+    line-height: 29.91px;
+  }
+
   // background-image: url("../img/flk.jpg");
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.container {
+  // width: 100%;
+  margin: 0 var(--gap-m);
+  @include media(1140) {
+    margin: 0 var(--gap);
+  }
 }

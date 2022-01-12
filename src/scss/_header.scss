@@ -1,0 +1,75 @@
+.header {
+  width: 100%;
+  background: url("../img/bg-m.svg") center top no-repeat;
+  background-size: cover;
+  height: 100%;
+  color: white;
+  padding-top: 14px;
+  @include media(1140) {
+    background: url("../img/bg.svg") center top no-repeat;
+    background-size: contain;
+    padding-top: 41px;
+  }
+}
+
+.header-block {
+  &__name {
+    display: inline-block;
+    font-size: 8px;
+    line-height: 10.9px;
+    padding-bottom: 19px;
+    @include media(1140) {
+      font-size: 18px;
+      line-height: 24.52px;
+      padding-bottom: 118px;
+    }
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 24.52px;
+    padding-bottom: 2px;
+    @include media(1140) {
+      font-size: 48px;
+      line-height: 65.38px;
+      font-weight: 800;
+      padding-bottom: 10px;
+    }
+  }
+  &__text {
+    padding-bottom: 15px;
+    &_semi {
+      @include media(1140) {
+        font-weight: 500;
+        padding-bottom: 36px;
+      }
+    }
+  }
+  &__buttons {
+    padding-bottom: 15px;
+    @include media(1140) {
+      padding-bottom: 54px;
+    }
+  }
+  &__button {
+    &_space {
+      margin-right: 10px;
+    }
+  }
+  &__start {
+    font-size: 8px;
+    line-height: 9.45px;
+    @include media(1140) {
+      font-size: 18px;
+      line-height: 24.52px;
+      font-weight: 600;
+    }
+  }
+  &__item {
+    &_space {
+      padding: 0 15px;
+      @include media(1140) {
+        padding: 0 23px;
+      }
+    }
+  }
+}
