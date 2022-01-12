@@ -92,16 +92,16 @@ module.exports = {
     },
     optimization: optimization(),
     plugins: [
-        // new HTMLWebpackPlugin({
-        //     filename: 'index.html',
-        //     template: path.resolve(__dirname, 'src/index.html'),
-        //     minify: {collapseWhitespace: idProd}
-        // }),
-        ...PAGES.map(page => new HTMLWebpackPlugin({
-          template: `${PAGES_DIR}/${page}`,
-          filename: `./${page.replace(/\.pug/,'.html')}`,
-          minify: {collapseWhitespace: idProd}
-        })),
+        new HTMLWebpackPlugin({
+            filename: 'index.html',
+            template: path.resolve(__dirname, 'src/index.html'),
+            minify: {collapseWhitespace: idProd}
+        }),
+        // ...PAGES.map(page => new HTMLWebpackPlugin({
+        //   template: `${PAGES_DIR}/${page}`,
+        //   filename: `./${page.replace(/\.pug/,'.html')}`,
+        //   minify: {collapseWhitespace: idProd}
+        // })),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: `./css/${fileName('css')}`
