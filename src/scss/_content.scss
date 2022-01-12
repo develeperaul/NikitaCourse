@@ -1,0 +1,183 @@
+.online,
+.situations,
+.solutions,
+.questions,
+.author,
+.feedbacks {
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.07px;
+    padding-bottom: 15px;
+  }
+
+  &__subtitle {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 14.57px;
+  }
+}
+
+.online {
+  &__subtitle {
+    padding-bottom: 8px;
+  }
+  &__text {
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    padding-bottom: 11px;
+    position: relative;
+    &::after {
+      content: "url(../img/check.svg)";
+    }
+  }
+  &__img {
+  }
+}
+
+.situations {
+  &__title {
+  }
+
+  &__subtitle {
+  }
+  &__text {
+  }
+  &__list {
+  }
+  &__item {
+  }
+  &__img {
+  }
+}
+
+.situation {
+  &__title {
+  }
+
+  &__subtitle {
+  }
+  &__text {
+  }
+  &__list {
+  }
+  &__item {
+  }
+  &__img {
+  }
+}
+
+.solutions {
+  &__title {
+  }
+
+  &__subtitle {
+  }
+  &__text {
+  }
+  &__list {
+  }
+  &__item {
+  }
+  &__img {
+  }
+}
+
+.solution {
+  &__title {
+  }
+
+  &__subtitle {
+  }
+  &__text {
+  }
+  &__list {
+  }
+  &__item {
+  }
+  &__img {
+  }
+}
+
+.questions {
+  &__title {
+  }
+
+  &__subtitle {
+  }
+  &__text {
+  }
+  &__list {
+  }
+  &__item {
+  }
+  &__img {
+  }
+}
+
+.question {
+  &__title {
+  }
+
+  &__subtitle {
+  }
+  &__text {
+  }
+  &__list {
+  }
+  &__item {
+  }
+  &__img {
+  }
+}
+
+.author {
+  &__title {
+  }
+
+  &__subtitle {
+  }
+  &__text {
+  }
+  &__list {
+  }
+  &__item {
+  }
+  &__img {
+  }
+}
+
+.feedbacks {
+  &__title {
+  }
+
+  &__subtitle {
+  }
+  &__text {
+  }
+  &__list {
+  }
+  &__item {
+  }
+  &__img {
+  }
+}
+.feedback {
+  &__title {
+  }
+
+  &__subtitle {
+  }
+  &__text {
+  }
+  &__list {
+  }
+  &__item {
+  }
+  &__img {
+  }
+}

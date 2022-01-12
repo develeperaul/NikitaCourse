@@ -11,8 +11,8 @@
 body {
   background-color: var(--bg-color);
   font-family: "NotoSansRegular", sans-serif;
-  font-size: 10px;
-  line-height: 11.82px;
+  font-size: 8px;
+  line-height: 13.3px;
   @include media(1140) {
     font-size: 18px;
     line-height: 29.91px;
