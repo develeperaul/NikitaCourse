@@ -27,35 +27,7 @@
                         </div>
                     </div>
             </div>
-            <!-- <select>
-                <option disabled style="display: inline-block;">Газификация</option>
-                <option value="1">Физические лица</option>
-                <option value="2">Юридические лица</option>
-                <option value="3">Газификация под ключ</option>
-                <option value="4">Выдача готовых документов (ГРО)</option>
-
-                <option disabled>Газоснабжение</option>
-                <option value="5">Заключение договора на поставку газа</option>
-                <option value="6">Заключение договора на техническое обслуживание</option>
-                <option value="7">Расчеты на газ</option>
-                <option value="8">Опломбировка приборов учета газа</option>
-                <option value="9">Выдача готовых документов (РГК)</option>
-
-                <option disabled>Прочее</option>
-                <option value="10">Установка, замена приборов учета газа</option>
-                <option value="11">Прочие работы и услуги</option>
-                <option value="12">Газификация под ключ</option>
-                <option value="13">Касса</option>
-            </select> -->
-
-            <!-- <select name="country" id="country">
-                <option value="gaz" selected>Газификация</option>
-                <option value="gazsnab">Газоснабжение</option>
-                <option value="prosh">Прочее</option>
-
-            </select>
-            <select name="options" id="option">
-            </select> -->
+           
         </div>
     </header>
     <!-- Header End -->
@@ -63,110 +35,181 @@
     <main>
         <div class="container">
             <section class="online">
-                <h2 class="online__title">Онлайн-курс для новичков</h2>
-                <h3 class="online__subtitle">Курс подходит вам, если вы имеете представление:</h3>
-                <ul class="online__list">
-                    <li class="online__item">
-                        Что такое тег?
-                    </li>
-                    <li class="online__item">
-                        Что такое атрибуты тегов и для чего они нужны?
-                    </li>
-                    <li class="online__item">
-                        Как тегам можно задавать стили через CSS?
-                    </li>
-                </ul>
-                <p class="online__text">Если вы только начинаете изучать HTML и CSS, посмотрите наш вводный 10 минутный урок. Он даст вам базовые знания, чтобы
-                успешно начать обучение.</p>
-                <p class="online__link">Ссылка на урок: https://www.youtube.com/</p>
-                <iframe  src="https://www.youtube.com/embed/3jT_q7dt-cM" frameborder="0" allowfullscreen>
-                </iframe>
+                <div class="online__wrapper-content">
+                    <div class="online__left">
+                        <h2 class="online__title">Онлайн-курс для новичков</h2>
+                        <h3 class="online__subtitle">Курс подходит вам, если вы имеете представление:</h3>
+                        <ul class="online__list">
+                            <li class="online__item">
+                                Что такое тег?
+                            </li>
+                            <li class="online__item">
+                                Что такое атрибуты тегов и для чего они нужны?
+                            </li>
+                            <li class="online__item">
+                                Как тегам можно задавать стили через CSS?
+                            </li>
+                        </ul>
+                        <p class="online__text">Если вы только начинаете изучать HTML и CSS, посмотрите наш вводный 10 минутный урок. Он даст вам базовые знания, чтобы
+                        успешно начать обучение.</p>
+                        <p class="online__link">Ссылка на урок: <a href="https://www.youtube.com/">https://www.youtube.com/</a> </p>
+                    </div>
+                    <div class="online__right">
+                        <img src="./img/content.svg" class="online-right__img" alt="">
+                    </div>
+                </div>
+                <div class="online__video-wrapper">
+
+                    <iframe class="online__video"  src="https://www.youtube.com/embed/3jT_q7dt-cM" frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+
+                
             </section>
             <section class="situations">
                 <h2 class="situations__title">С какими трудностями сталкиваются новички?</h2>
                 <ul class="situations__list">
                     <li class="situations__item situation">
                         <img src="./img/emoji1.svg" alt="" class="situation__img">
-                        <h3 class="situation__title">Много информации</h3>
-                        <p class="situation__text">Новички теряются в большом количестве информации по верстке
+                        <div>
+                            <h3 class="situation__title">Много информации</h3>
+                            <p class="situation__text">Новички теряются в большом количестве информации по верстке
+                        </div>
 </p>
 
                     </li>
                     <li class="situations__item situation">
                         <img src="./img/emoji2.svg" alt="" class="situation__img">
-                        <h3 class="situation__title">Пробелы в основах</h3>
-                        <p class="situation__text">Новички мало уделяют внимание основам, отчего на практике много ошибок</p>
+                        <div>
+                            <h3 class="situation__title">Пробелы в основах</h3>
+                            <p class="situation__text">Новички мало уделяют внимание основам, отчего на практике много ошибок</p>
+                        </div>
 
                     </li>
                     <li class="situations__item situation">
                         <img src="./img/emoji3.svg" alt="" class="situation__img">
-                        <h3 class="situation__title">Усложнение макетов</h3>
-                        <p class="situation__text">Сейчас крайне важно уметь делать макет адаптивным под разные устройства</p>
+                        <div>
+                            <h3 class="situation__title">Усложнение макетов</h3>
+                            <p class="situation__text">Сейчас крайне важно уметь делать макет адаптивным под разные устройства</p>
+                        </div>
 
                     </li>
                 </ul>
             </section>
             <section class="solutions">
-                <h2 class="solutions__title"></h2>
+                <h2 class="solutions__title">Как легко преодолеть трудности в изучении?</h2>
                 <ul class="solutions__list">
                     <li class="solution__item solution">
-                        <img src="./img/arm2.svg" alt="" class="solution__img">
-                        <h3 class="solution__subtitle">Максимум необходимой информации в 8 уроках</h3>
-                        <p class="solution__text">Для того чтобы не утонуть в огромном количестве информации, мы взяли все самые необходимые темы и поместили их в 8
-                        уроков.</p>
-                        <p class="solution__text">Этого обучения будет достаточно, чтобы начать верстать и успешно справляться с задачами заказчиков.</p> 
+                        <img src="./img/arm1.svg" alt="" class="solution__img_dekstop">
+                        <div>
+                            <div class="solution__wrapper_mobile">
+                                <img src="./img/arm1.svg" alt="" class="solution__img_mobile">
+                                <h3 class="solution__subtitle">Максимум необходимой информации в 8 уроках</h3>
+                            </div>
+                            <p class="solution__text solution__text_pb">Для того чтобы не утонуть в огромном количестве информации, мы взяли все самые необходимые темы и поместили их в 8
+                            уроков.</p>
+                            <p class="solution__text">Этого обучения будет достаточно, чтобы начать верстать и успешно справляться с задачами заказчиков.</p> 
+                        </div>
                     </li>
                     <li class="solution__item solution">
-                        <img src="./img/arm2.svg" alt="" class="solution__img">
-                        <h3 class="solution__subtitle">Сначала основы, а затем углубленное изучение</h3>
-                        <p class="solution__text">В первой части курса мы делаем упор на фундаментальные основы: учим строить HTML структуру и на ее основе правильно
-                        стилизовать элементы.
-</p>
-                        <p class="solution__text">Во второй части курса мы разбираем более продвинутые темы: расстановка элементов по сетке, размеры элементов, адаптивная
-                        верстка и ее ключевые принципы.</p> 
+                        <img src="./img/arm2.svg" alt="" class="solution__img_dekstop">
+                        <div>
+                            <div class="solution__wrapper_mobile">
+                                <img src="./img/arm2.svg" alt="" class="solution__img_mobile">
+                                <h3 class="solution__subtitle">Сначала основы, а затем углубленное изучение</h3>
+                            </div>
+                            <p class="solution__text solution__text_pb">В первой части курса мы делаем упор на фундаментальные основы: учим строить HTML структуру и на ее основе правильно
+                            стилизовать элементы.
+    </p>
+                            <p class="solution__text">Во второй части курса мы разбираем более продвинутые темы: расстановка элементов по сетке, размеры элементов, адаптивная
+                            верстка и ее ключевые принципы.</p> 
+                        </div>
                     </li>
                     <li class="solution__item solution">
-                        <img src="./img/arm2.svg" alt="" class="solution__img">
-                        <h3 class="solution__subtitle">Практика и еще раз практика!</h3>
-                        <p class="solution__text">В процессе обучения мы будем уделять большое внимание практике. После каждого урока у вас будет практическое задание,
-                        которое будет проверено преподавателем в начале следующего урока.</p>
-                        <p class="solution__text">В конце курса вы сверстаете реальный макет и закрепите свою первую работу в портфолио.</p> 
+                        <img src="./img/arm3.svg" alt="" class="solution__img_dekstop">
+                        <div>
+                            <div class="solution__wrapper_mobile">
+                                <img src="./img/arm3.svg" alt="" class="solution__img_mobile">
+                                <h3 class="solution__subtitle">Практика и еще раз практика!</h3>
+                            </div>
+                            <p class="solution__text solution__text_pb">В процессе обучения мы будем уделять большое внимание практике. После каждого урока у вас будет практическое задание,
+                            которое будет проверено преподавателем в начале следующего урока.</p>
+                            <p class="solution__text">В конце курса вы сверстаете реальный макет и закрепите свою первую работу в портфолио.</p> 
+                        </div>
                     </li>
                 </ul>
             </section>
             <section class="programm">
                 <h2 class="programm__title">Программа курса</h2>
+                <div id="accordion"></div>
             </section>
             <section class="questions">
                 <h2 class="questions__title">Как проходит обучение?</h2>
                 <ul class="questions__list">
                     <li class="questions__item question">
-                        <h3 class="question__title">Формат</h3>
-                        <p class="question__text">Уроки будут проходить онлайн 2 раза в неделю в 20:00 по МСК.
-                        В первой части урока мы будем разбирать ваши домашние задания, а во второй части - подробно изучать тему урока.</p>
+                        <div class="question__left">
+
+                            <div class="question__numb">1</div>
+                            <div class="question__line"></div>
+                        </div>
+                        <div>
+                            <h3 class="question__title">Формат</h3>
+                            <p class="question__text">Уроки будут проходить онлайн 2 раза в неделю в 20:00 по МСК.
+                            В первой части урока мы будем разбирать ваши домашние задания, а во второй части - подробно изучать тему урока.</p>
+                        </div>
                     </li>
                     <li class="questions__item question">
-                        <h3 class="question__title">Длительность уроков</h3>
-                        <p class="question__text">В среднем каждый урок занимает 2 часа. Длительность урока зависит от объема разбираемой темы и количества присланных
-                        домашних работ.</p>
+                        <div class="question__left">
+                        
+                            <div class="question__numb">2</div>
+                            <div class="question__line"></div>
+                        </div>
+                        <div>
+                            <h3 class="question__title">Длительность уроков</h3>
+                            <p class="question__text">В среднем каждый урок занимает 2 часа. Длительность урока зависит от объема разбираемой темы и количества присланных
+                                домашних работ.</p>
+                        </div>
                     </li>
                     <li class="questions__item question">
-                        <h3 class="question__title">Когда можно задавать вопросы?</h3>
-                        <p class="question__text">Вопросы можно задавать в чате во время урока или вне урока в отдельном канале, который будет создан перед стартом курса.</p>
+                        <div class="question__left">
+                        
+                            <div class="question__numb">3</div>
+                            <div class="question__line"></div>
+                        </div>
+                        <div>
+                            <h3 class="question__title">Когда можно задавать вопросы?</h3>
+                            <p class="question__text">Вопросы можно задавать в чате во время урока или вне урока в отдельном канале, который будет создан перед стартом курса.</p>
+                        </div>
                     </li>
                     <li class="questions__item question">
-                        <h3 class="question__title">Есть ли записи уроков?</h3>
-                        <p class="question__text">Да, после каждого урока вы получаете видеозапись и исходники кода, который был написан на уроке.</p>
+                        <div class="question__left">
+                        
+                            <div class="question__numb">4</div>
+                            
+                        </div>
+                        <div>
+                            <h3 class="question__title">Есть ли записи уроков?</h3>
+                            <p class="question__text">Да, после каждого урока вы получаете видеозапись и исходники кода, который был написан на уроке.</p>
+                        </div>
                     </li>
                 </ul>
             </section>
             <section class="author">
-                <h2 class="author__title"></h2>
+                <h2 class="author__title">Об авторе курса</h2>
                 <div class="author__content">
                     <div class="author__left">
-                        <h2 class="author__name"></h2>
-                        <h3 class="author__subtile"></h3>
-                        <p class="author__text">“Имею 5 лет опыта в верстке, активно занимаюсь фронтенд-разработкой, как основной деятельностью. Учавствую во многих
+                        <div class="author__header">
+                            <div class="author__left-mobile">
+                                <h2 class="author__title-mobile">Об авторе курса</h2>
+                                <h2 class="author__name">Никита Антонов</h2>
+                                <h3 class="author__subtitle">фронтенд-разработчик, автор курса</h3>
+                            </div>
+                            <div class="author__right-mobile">
+                                <img src="./img/photo.png" alt="" class="author__img-mobile">
+                            </div>
+
+                        </div>
+                        <p class="author__text author__text_pb">“Имею 5 лет опыта в верстке, активно занимаюсь фронтенд-разработкой, как основной деятельностью. Учавствую во многих
                         мелких, средних
                         и крупных проектах. Разрабатываю курсы, чтобы делиться опытом.</p>
                         <p class="author__text">Понимая как непросто освоиться в новой сфере, сколько возникает вопросов и ошибок, мы с командой подготовили этот курс,
@@ -187,7 +230,7 @@
                             </div>
                             <div class="feedback__right">
                                 <h3 class="feedback__title">Рауль Баймухаметов</h3>
-                                <p class="feedback__text">Студент курса Javascript</p>
+                                <p class="feedback__course">Студент курса <a href="#"> Javascript </a></p>
                             </div>
                         </div>
                         <div class="feedback__footer">
@@ -205,7 +248,7 @@
                             </div>
                             <div class="feedback__right">
                                 <h3 class="feedback__title">Александр Петров</h3>
-                                <p class="feedback__text">Студент курса Javascript</p>
+                                <p class="feedback__course">Студент курса <a href="#"> Javascript </a></p>
                             </div>
                         </div>
                         <div class="feedback__footer">
@@ -220,64 +263,46 @@
                 </ul>
             </section>
         </div>
+        
     </main>
     <footer class="footer">
         <div class="container">
             
             <article class="enter">
-                <h2 class="enter__title">Запишитесь на курс прямо сейчас или получите консультацию</h1>
-                <h3 class="enter__subtitle">Стоимость обучения</h3>
-                <div class="enter__prices">
-                    <span class="enter__price">14 900 руб</span>
-                    <span class="enter__old-price">17 900 руб</span>
+                <div class="enter__left">
+                    <h2 class="enter__title">Запишитесь на курс прямо сейчас или получите консультацию</h1>
+                    <h3 class="enter__subtitle enter__subtitle_pb">Стоимость обучения</h3>
+                    <div class="enter__prices">
+                        <span class="enter__price">14 900 руб</span>
+                        <span class="enter__price-old">17 900 руб</span>
+                    </div>
+                    <h3 class="enter__diskont">Скидка 20% действует до 30 ноября</h3>
+                    <h3 class="enter__subtitle">Действует гарантия возврата</h3>
+                    <p class="enter__text enter__text_pt">Если курс вам не подойдет, у вас есть 2 первых урока, чтобы вернуть деньги.</p> 
                 </div>
-                <h3 class="enter__diskont">Скидка 20% действует до 30 ноября</h3>
-                <h3 class="enter__subtitle">Действует гарантия возврата</h3>
-                <p class="enter__text">Если курс вам не подойдет, у вас есть 2 первых урока, чтобы вернуть деньги.</p> 
+                <div class="enter__right">
+                    <h3 class="enter__form-title">
+                        Ваши контакты:
+                    </h3>
+                        <div class="form">
+                            <form class="form__content">
+                                <input type="text" class="form__input" placeholder="Имя">
+                                <input type="tel" class="form__input" placeholder="Телефон">
+                                <input type="email" class="form__input" placeholder="E-mail">
+                                <div class="form__btn">
+                                    <button type="submit" class="link-course">записаться на курс</button>
+                                </div>
+                                <p class="form__personal">
+                                    Нажимая на кнопку, я даю согласие на <a href="#">обработку персональных данных</a>
+                                </p>
+                            </form>
+                        </div>
+                </div>
             </article>
         </div>
     </footer>
     <script>
-        let options = {
-                gaz: [
-                    {name:"Физические лица", value: 1},
-                    {name:"Юридические лица", value: 2},
-                    { name: "Газификация под ключ", value: 3 },
-                    { name: "Выдача готовых документов (ГРО)", value: 4 }
-                ],
-                gazsnab: [
-                    { name: "Заключение договора на поставку газа", value: 5 },
-                    { name: "Заключение договора на техническое обслуживание", value: 6 },
-                    { name: "Расчеты на газ", value: 7 },
-                    { name: "Опломбировка приборов учета газа", value: 8 },
-                    { name: "Выдача готовых документов (РГК)", value: 9 }
-                ],
-                prosh: [
-                    { name: "Установка, замена приборов учета газа", value: 10 },
-                    { name: "Прочие работы и услуги", value: 11 },
-                    { name: "Газификация под ключ", value: 12 },
-                    { name: "Касса", value: 13 },
-                ]
-                // rus: ["Москва", "Санкт-Петербург"],
-                // ind: ["Мумбаи", "Дели"],
-                // chn: ["Шанхай", "Пекин"],
-                // zaf: ["Йоханнесбург", "Кейптаун"]
-            };
-            let country = document.getElementById("country");
-            let option = document.querySelector("#option");
-            window.onload = selectCountry;
-            country.onchange = selectCountry;
-
-            function selectCountry(ev) {
-                option.innerHTML = "";
-                let c = this.value || "gaz", o;
-                for (let i = 0; i < options[c].length; i++) {
-                    console.log(options[c][i].city)
-                    o = new Option(options[c][i].name, options[c][i].value, false, false);
-                    option.add(o);
-                    
-                };
-            }
+       
 
     </script>
 </body>

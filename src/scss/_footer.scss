@@ -1,0 +1,91 @@
+.footer {
+  padding-top: 15px;
+  padding-bottom: 27px;
+  background-color: var(--primary);
+  color: #ffffff;
+  @include media(1140) {
+    padding-top: 75px;
+    padding-bottom: 91px;
+  }
+}
+
+.enter {
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.07px;
+    padding-bottom: 12px;
+    @include media(1140) {
+      font-size: 40px;
+      line-height: 54.48px;
+    }
+  }
+  &__subtitle {
+    font-size: 10px;
+    line-height: 14.57px;
+    font-weight: 700;
+    &_pb {
+      padding-bottom: 10px;
+    }
+    @include media(1140) {
+      font-size: 22px;
+      line-height: 32.05px;
+    }
+  }
+  &__price {
+    padding-right: 24px;
+    &s {
+      font-size: 14px;
+      line-height: 19.07px;
+      font-weight: 700;
+      padding-bottom: 14px;
+      @include media(1140) {
+        padding-bottom: 27px;
+        font-size: 40px;
+        line-height: 54.48px;
+      }
+    }
+    &-old {
+      color: #c5c5c5;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 103%;
+        height: 2px;
+        top: 50%;
+        transform: translateY(50%);
+        background-color: #c5c5c5;
+        @include media(1140) {
+          height: 4px;
+          width: calc(103% - 78px);
+        }
+      }
+    }
+  }
+
+  &__diskont {
+    font-size: 12px;
+    line-height: 17.48px;
+    font-weight: 700;
+    @include media(1140) {
+      font-size: 30px;
+      line-height: 43.71px;
+      padding-bottom: 42px;
+    }
+  }
+
+  &__text {
+    &_pt {
+      padding-top: 7px;
+      padding-bottom: 27px;
+    }
+  }
+
+  &__form-title {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 14.57px;
+    padding-bottom: 10px;
+  }
+}

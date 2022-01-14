@@ -49,10 +49,25 @@ a {
   padding: 0;
 }
 
+// .container {
+//   margin-right: auto; /* 1 */
+//   margin-left: auto; /* 1 */
+
+//   // padding-right: 15px; /* 3 */
+//   // padding-left: 15px; /* 3 */
+//   // width: 100%;
+//   max-width: 1440px; /* 2 */
+//   width: 100%;
+//   padding: 0 var(--gap-m);
+//   @include media(1140) {
+//     padding: 0 var(--gap);
+//     max-width: 1440px; /* 2 */
+//   }
+// }
 .container {
-  margin: 0 auto;
-  padding: 0;
+  width: 100%;
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 ul {

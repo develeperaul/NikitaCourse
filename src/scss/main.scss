@@ -4,6 +4,7 @@
 @import "vars";
 @import "settings";
 @import "ui";
+@import "accorion";
 @import "header";
 @import "content";
 @import "footer";
@@ -24,14 +25,23 @@ body {
 h1,
 h2,
 h3,
+h4,
 p {
   margin: 0;
 }
 
 .container {
+  margin-right: auto; /* 1 */
+  margin-left: auto; /* 1 */
+
+  // padding-right: 15px; /* 3 */
+  // padding-left: 15px; /* 3 */
   // width: 100%;
-  margin: 0 var(--gap-m);
+
+  max-width: 1440px; /* 2 */
+  width: 100%;
+  padding: 0 var(--gap-m);
   @include media(1140) {
-    margin: 0 var(--gap);
+    padding: 0 var(--gap);
   }
 }
