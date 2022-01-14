@@ -8,6 +8,9 @@ const OptimizCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugi
 const TerserWebpackPlugin = require('terser-webpack-plugin')
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const { extendDefaultPlugins } = require("svgo");
+const { VueLoaderPlugin } = require('vue-loader')
+
+
 
 
 const isDev = process.env.NODE_ENV === 'development';
@@ -110,11 +113,17 @@ module.exports = {
             patterns: [
                 {from: path.resolve(__dirname, 'src/assets'), to: path.resolve(__dirname, 'dist')}
             ]
-        })
+        }),
+        new VueLoaderPlugin()
     ],
     devtool: idProd ? false : 'source-map',
     module: {
         rules: [
+            {
+            test: /\.vue$/,
+            loader: 'vue-loader',
+            
+            },
             {
                 test: /\.pug$/,
                 loader: 'pug-loader'
@@ -131,6 +140,7 @@ module.exports = {
                         hmr: isDev
                     },
                 },
+                'vue-style-loader',
                 'css-loader'
                 ]
             },
