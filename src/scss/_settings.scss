@@ -19,11 +19,40 @@ img {
   max-width: 100%;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
+// input {
+//   border: none;
+//   -webkit-appearance: none;
+//   -ms-appearance: none;
+//   -moz-appearance: none;
+//   appearance: none;
+//   background: transparent;
+//   padding-right: 6px;
+//   padding-bottom: 6px;
+//   padding-top: 6px;
+//   padding-left: 0;
+//   border-bottom: 1px solid #000;
+//   font-size: 12px;
+//   line-height: 16.34px;
+//   color: #000;
+//   &::placeholder {
+//     color: #000;
+//   }
 
+//   @include media(1140) {
+//     font-size: 16px;
+//     line-height: 21.79px;
+//   }
+// }
+// input:,
+// input:focus {
+//   border: none;
+// }
+
+// input:focus {
+//   top: -10px;
+//   font-size: 10px;
+//   color: #222;
+// }
 .site-container {
   overflow: hidden;
 }

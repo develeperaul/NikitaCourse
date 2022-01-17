@@ -3,6 +3,11 @@
   background-color: #fff;
   padding: 23px 20px;
   border-radius: 15px;
+  width: 276px;
+  @include media(1140) {
+    width: 460px;
+    padding: 57px 49px;
+  }
   &__content {
     display: flex;
     flex-direction: column;
@@ -14,7 +19,8 @@
   &__btn {
     display: flex;
     justify-content: center;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 9px;
   }
 
   &__personal {
@@ -33,4 +39,8 @@
       display: block;
     }
   }
+}
+
+.text-danger {
+  color: var(--accent);
 }

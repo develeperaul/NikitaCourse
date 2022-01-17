@@ -416,7 +416,9 @@
   &__item {
   }
   &__img {
+    border-radius: 50%;
     &-mobile {
+      border-radius: 50%;
       margin-left: 10px;
       width: 74px;
       height: 74px;
@@ -425,11 +427,15 @@
 }
 
 .feedbacks {
+  margin-bottom: 0;
   &__list {
-    display: flex;
-    overflow-x: hidden;
+    // display: flex;
+    // overflow-x: hidden;
     padding-bottom: 10px;
   }
+}
+.feedbacks > .container {
+  padding-right: 0;
 }
 .feedback {
   flex-shrink: 0;
@@ -490,5 +496,121 @@
   &__item {
   }
   &__img {
+    border-radius: 50%;
+  }
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel__viewport {
+  padding-bottom: 35px;
+  @include media(1140) {
+    padding-top: 35px;
+    padding-bottom: 170px;
+    padding-left: 15px;
+  }
+}
+
+.carousel-arrows {
+  display: none;
+
+  @include media(1140) {
+    position: absolute;
+    top: 0;
+    right: var(--gap);
+    display: flex;
+  }
+}
+
+.arrow-prev {
+  margin-right: 8px;
+}
+
+.arrow-prev {
+  cursor: pointer;
+  position: relative;
+  width: 15px;
+  height: 15px;
+}
+.arrow-prev div {
+  position: relative;
+  top: 0px;
+  width: 15px;
+  height: 2px;
+  background-color: #cccccc;
+
+  left: 0;
+  display: block;
+}
+
+.arrow-prev div::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 1.5px;
+  top: -3.5px;
+  right: 8px;
+  background-color: #cccccc;
+  border-radius: 10px;
+  transform: rotate(-45deg);
+}
+.arrow-prev div::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 1.5px;
+  top: 2.5px;
+  right: 8px;
+  border-radius: 10px;
+  background-color: #cccccc;
+  transform: rotate(45deg);
+}
+.arrow-next {
+  cursor: pointer;
+  position: relative;
+  width: 15px;
+  height: 15px;
+}
+.arrow-next div {
+  position: relative;
+  top: 0px;
+  width: 15px;
+  height: 2px;
+  background-color: #cccccc;
+
+  left: 0;
+  display: block;
+}
+.arrow-next div::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 1.5px;
+  top: -3.5px;
+  right: -2px;
+  background-color: #cccccc;
+  border-radius: 10px;
+  transform: rotate(45deg);
+}
+.arrow-next div::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 1.5px;
+  top: 2.5px;
+  right: -2px;
+  border-radius: 10px;
+  background-color: #cccccc;
+
+  transform: rotate(-45deg);
+}
+
+.arrow-active div {
+  background-color: #000;
+  &::after,
+  &::before {
+    background-color: #000;
   }
 }

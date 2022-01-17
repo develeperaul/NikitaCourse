@@ -1,5 +1,5 @@
 <template>
-  <div class="accordion" >
+    <div class="accordion__content">
         <template v-for="(part, index ) in lessons" :key="index">
             <h2 class="accordion__title">{{part.part}}</h2>
             <div class="accordion__lessons">
@@ -34,9 +34,9 @@
                 </article>
             </div>
         </template>
+    </div>
 
-<a href="#" class="link-course accordion__btn">записаться на курс</a>
-  </div>
+
 </template>
 
 

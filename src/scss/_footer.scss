@@ -10,6 +10,11 @@
 }
 
 .enter {
+  &__content {
+    @include media(1140) {
+      display: flex;
+    }
+  }
   &__title {
     font-size: 14px;
     font-weight: 700;
@@ -74,7 +79,11 @@
       padding-bottom: 42px;
     }
   }
-
+  &__right {
+    @include media(1140) {
+      margin-left: 10px;
+    }
+  }
   &__text {
     &_pt {
       padding-top: 7px;
@@ -87,5 +96,10 @@
     font-weight: 600;
     line-height: 14.57px;
     padding-bottom: 10px;
+    @include media(1140) {
+      font-size: 22px;
+      line-height: 32.05px;
+      padding-bottom: 22px;
+    }
   }
 }

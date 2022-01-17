@@ -84,7 +84,8 @@ module.exports = {
     output: {
         filename: `./js/${fileName('js')}`,
         path: path.resolve(__dirname, 'dist'),
-        publicPath: ''
+        publicPath: '',
+         assetModuleFilename: 'src/assets/images/[name].[ext]'
     },
     devServer: {
         historyApiFallback: true,
@@ -164,7 +165,7 @@ module.exports = {
                 use: ['babel-loader'],
             },
             {
-                test: /\.(?:|gif|png|jpg|jpeg|png|svg)$/i,
+                test: /\.(?:|gif|jpg|jpeg|svg|png)$/,
                 type: 'asset/resource',
                 generator: {
                     filename: 'img/[hash][ext][query]'
